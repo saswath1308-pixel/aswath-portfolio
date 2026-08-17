@@ -29,69 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateISTClock, 1000);
 
   // -------------------------------------------------------------------------
-  // 02. PHOTO CURSOR FOLLOWER & GLOW (DESKTOP)
+  // 02. CURSOR FOLLOWER & GLOW (DESKTOP)
   // -------------------------------------------------------------------------
-  const cursorFollower = document.getElementById('cursor-follower');
+  const cursorDot = document.getElementById('cursor-dot');
   const cursorGlow = document.getElementById('cursor-glow');
 
-  if (window.matchMedia('(pointer: fine)').matches && cursorFollower && cursorGlow) {
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-    let currentX = mouseX;
-    let currentY = mouseY;
-
+  if (window.matchMedia('(pointer: fine)').matches && cursorDot && cursorGlow) {
     window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursorFollower.style.opacity = '1';
-      cursorGlow.style.opacity = '1';
+      const { clientX: x, clientY: y } = e;
+      cursorDot.style.left = `${x}px`;
+      cursorDot.style.top = `${y}px`;
 
       cursorGlow.animate({
-        left: `${mouseX}px`,
-        top: `${mouseY}px`
-      }, { duration: 600, fill: 'forwards' });
-    });
-
-    // Smooth animation loop for photo cursor follower
-    function animateCursor() {
-      // Ease toward mouse position
-      currentX += (mouseX - currentX) * 0.25;
-      currentY += (mouseY - currentY) * 0.25;
-
-      cursorFollower.style.left = `${currentX}px`;
-      cursorFollower.style.top = `${currentY}px`;
-
-      requestAnimationFrame(animateCursor);
-    }
-    requestAnimationFrame(animateCursor);
-
-    // Interactive element hover effects
-    const interactiveTargets = document.querySelectorAll('a, button, .glass-card, .tool-pill, .chip, .tab-btn');
-    interactiveTargets.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursorFollower.classList.add('hovering');
-      });
-      el.addEventListener('mouseleave', () => {
-        cursorFollower.classList.remove('hovering');
-      });
-    });
-
-    // Click micro-animation
-    window.addEventListener('mousedown', () => {
-      cursorFollower.classList.add('clicking');
-    });
-    window.addEventListener('mouseup', () => {
-      cursorFollower.classList.remove('clicking');
-    });
-
-    // Mouse enter / leave viewport
-    document.addEventListener('mouseleave', () => {
-      cursorFollower.style.opacity = '0';
-      cursorGlow.style.opacity = '0';
-    });
-    document.addEventListener('mouseenter', () => {
-      cursorFollower.style.opacity = '1';
-      cursorGlow.style.opacity = '1';
+        left: `${x}px`,
+        top: `${y}px`
+      }, { duration: 500, fill: 'forwards' });
     });
   }
 
