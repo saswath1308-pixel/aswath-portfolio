@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aswath S — UI/UX Designer & Product Thinker</title>
+  <meta name="description" content="Portfolio of Aswath S, UI/UX Designer specializing in user-centered design, mobile & web applications, design systems, and intuitive digital experiences.">
+  <meta name="author" content="Aswath S">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Aswath S | UI/UX Designer Portfolio">
+  <meta property="og:description" content="Passionate UI/UX Designer crafting engaging digital experiences through empathy, research, and high-fidelity interaction design.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Space Grotesk (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Cursor Follower (Desktop) -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Top Status & Utility Bar -->
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-accent">A</span>SWATH<span class="logo-dot">.</span>S
+      </a>
+
+      <div class="nav-status-badge">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Available for UI/UX Opportunities</span>
+      </div>
+
+      <div class="nav-meta">
+        <div class="location-time">
+          <i data-lucide="map-pin" class="meta-icon"></i>
+          <span>Palani, TN</span>
+          <span class="meta-divider">•</span>
+          <span id="live-time" class="time-ticker">--:--:-- IST</span>
+        </div>
+        <button id="resume-nav-btn" class="btn btn-ghost btn-sm" aria-label="Open Resume Modal">
+          <i data-lucide="file-text" class="icon-sm"></i>
+          <span>Resume</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-eyebrow">
+          <span class="tag-pill">UI / UX Designer & Product Craftsman</span>
+          <span class="eyebrow-line"></span>
+          <span class="experience-tag">Intern at Pirai Infotech</span>
+        </div>
+
+        <h1 class="hero-title">
+          Crafting <span class="text-gradient">thoughtful digital</span> experiences through empathy & craft.
+        </h1>
+
+        <p class="hero-bio">
+          Hi, I'm <strong>Aswath S</strong> — a passionate UI/UX designer with expertise in user-centered design principles. 
+          I translate complex problems into intuitive, high-converting digital interfaces across mobile and web platforms.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Selected Work</span>
+            <i data-lucide="arrow-down-right" class="icon-sm"></i>
+          </a>
+          
+          <button id="open-resume-hero" class="btn btn-secondary">
+            <i data-lucide="file-text" class="icon-sm"></i>
+            <span>View Full Resume</span>
+          </button>
+
+          <button id="copy-email-btn" class="btn btn-outline" data-email="saswath1308@gmail.com">
+            <i data-lucide="copy" class="icon-sm"></i>
+            <span class="copy-label">Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Metric Cards Bar -->
+        <div class="hero-metrics-grid">
+          <div class="metric-card glass-card">
+            <div class="metric-num">02+</div>
+            <div class="metric-label">Industry Internships</div>
+            <div class="metric-sub">Pirai Infotech & EdXL</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-num">04+</div>
+            <div class="metric-label">End-to-End Case Studies</div>
+            <div class="metric-sub">Mobile Apps, Booking & Web</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-num">17+</div>
+            <div class="metric-label">Design Competencies</div>
+            <div class="metric-sub">Research, Systems & Prototyping</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-num">100%</div>
+            <div class="metric-label">User-Centered Focus</div>
+            <div class="metric-sub">Empathy & Data Driven</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY / ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">01 // PHILOSOPHY & ABOUT</span>
+          <h2 class="section-title">Empathy is the cornerstone of great design.</h2>
+          <p class="section-subtitle">
+            Every screen, flow, and component I build starts with understanding real human behavior, minimizing cognitive load, and creating delightful utility.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Bio Statement Card -->
+          <div class="about-statement-card glass-card">
+            <div class="card-glow"></div>
+            <div class="statement-header">
+              <div class="user-avatar-badge">AS</div>
+              <div>
+                <h3 class="user-name">Aswath S</h3>
+                <p class="user-role">UI/UX Designer • Palani, Tamil Nadu</p>
+              </div>
+            </div>
+            <p class="statement-text">
+              "Driven by empathy and creativity, I excel at solving complex problems with thoughtful, user-centric solutions. Known for attention to detail and a commitment to delivering high-quality designs that exceed expectations."
+            </p>
+            <div class="contact-chips">
+              <a href="mailto:saswath1308@gmail.com" class="chip"><i data-lucide="mail"></i> saswath1308@gmail.com</a>
+              <a href="tel:+918122343302" class="chip"><i data-lucide="phone"></i> +91 8122343302</a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="chip"><i data-lucide="linkedin"></i> LinkedIn</a>
+              <a href="https://behance.net" target="_blank" rel="noreferrer" class="chip"><i data-lucide="globe"></i> Behance</a>
+            </div>
+          </div>
+
+          <!-- 3 Core Pillars -->
+          <div class="pillars-container">
+            
+            <div class="pillar-card glass-card">
+              <div class="pillar-num">01</div>
+              <div class="pillar-content">
+                <h4>User-Centered Discovery</h4>
+                <p>Deep-diving into user needs, user flows, personas, and behavioral patterns to create friction-free journeys.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-num">02</div>
+              <div class="pillar-content">
+                <h4>Systematic Architecture & Craft</h4>
+                <p>From low-fi wireframes to pixel-perfect component systems, auto-layout tokens, and accessible visual hierarchy.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-num">03</div>
+              <div class="pillar-content">
+                <h4>Engineering & Business Alignment</h4>
+                <p>Leveraging a Mechanical Engineering foundation to collaborate seamlessly with dev teams and optimize conversion goals.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS / CASE STUDIES -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header between">
+          <div>
+            <span class="section-badge">02 // SELECTED WORK</span>
+            <h2 class="section-title">Case Studies & Design Projects</h2>
+          </div>
+          <p class="section-subtitle-right">
+            Curated selection of mobile applications, conversion-driven landing pages, and interactive digital products.
+          </p>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 1: SEAWAYS MOBILE APP -->
+          <article class="project-card glass-card" data-project="seaways-app">
+            <div class="card-glow"></div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type-pill">CASE STUDY // MOBILE APP</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Seaways — Cruise Trip Booking & Rental App</h3>
+              <p class="project-desc">
+                Designed a comprehensive mobile app prototype for cruise trip booking, cabin reservations, and shore excursion rentals, leveraging user-centered design principles to maximize engagement and reduce booking abandonment.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Mobile UX</span>
+                <span class="tag">Booking Flow</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Information Architecture</span>
+                <span class="tag">Figma</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-case-study" data-case="seaways-app">
+                  <span>View Case Study</span>
+                  <i data-lucide="arrow-up-right" class="icon-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-visual seaways-app-preview">
+              <div class="mockup-frame">
+                <div class="mockup-header">
+                  <div class="mockup-dot red"></div>
+                  <div class="mockup-dot yellow"></div>
+                  <div class="mockup-dot green"></div>
+                  <span class="mockup-title">Seaways Mobile App • Figma Prototype</span>
+                </div>
+                <div class="mockup-body phone-preview">
+                  <div class="phone-screen">
+                    <div class="screen-hero-bar">
+                      <div class="brand-text">SEAWAYS ⚓</div>
+                      <i data-lucide="bell" class="icon-xs"></i>
+                    </div>
+                    <div class="screen-banner">
+                      <span class="badge-mini">Summer Cruise Deals</span>
+                      <h4>Explore Mediterranean Waves</h4>
+                      <p>5 Nights • All Inclusive Cabin</p>
+                      <button class="btn-micro">Book Cruise</button>
+                    </div>
+                    <div class="screen-grid">
+                      <div class="screen-card">
+                        <i data-lucide="compass" class="icon-sm"></i>
+                        <span>Luxury Liners</span>
+                      </div>
+                      <div class="screen-card">
+                        <i data-lucide="anchor" class="icon-sm"></i>
+                        <span>Island Trips</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: SEAWAYS LANDING PAGE -->
+          <article class="project-card glass-card reverse" data-project="seaways-landing">
+            <div class="card-glow"></div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type-pill">CASE STUDY // WEB & CONVERSION</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Seaways — High-Converting Cruise Platform</h3>
+              <p class="project-desc">
+                Developed a high-performing, responsive landing page for cruise booking and rentals. Optimized information architecture, visual hierarchy, and CTA placement for seamless booking conversion and usability across all screen sizes.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">Conversion Optimization</span>
+                <span class="tag">Responsive UI</span>
+                <span class="tag">Visual Hierarchy</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm open-case-study" data-case="seaways-landing">
+                  <span>View Case Study</span>
+                  <i data-lucide="arrow-up-right" class="icon-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-visual seaways-web-preview">
+              <div class="mockup-frame web">
+                <div class="mockup-header">
+                  <div class="mockup-dot red"></div>
+                  <div class="mockup-dot yellow"></div>
+                  <div class="mockup-dot green"></div>
+                  <span class="mockup-title">seaways-cruises.com/book</span>
+                </div>
+                <div class="mockup-body browser-preview">
+                  <div class="browser-nav">
+                    <span class="logo-tiny">SEAWAYS</span>
+                    <div class="nav-links-tiny">
+                      <span>Destinations</span>
+                      <span>Ships</span>
+                      <span>Deals</span>
+                    </div>
+                    <span class="btn-tiny">Explore</span>
+                  </div>
+                  <div class="browser-hero">
+                    <span class="hero-sub-tiny">PREMIUM CRUISE EXPERIENCE</span>
+                    <h3>Sail Beyond Horizons with Seaways</h3>
+                    <div class="search-bar-tiny">
+                      <span>📍 Destination</span>
+                      <span>📅 Dates</span>
+                      <span>👥 Guests</span>
+                      <span class="btn-search-tiny">Find</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SECONDARY PROJECTS GRID -->
+          <div class="secondary-projects-grid">
+            
+            <!-- PROJECT 3: GROCERY RETAIL -->
+            <div class="secondary-card glass-card" data-project="grocery-app">
+              <div class="project-meta-row">
+                <span class="project-type-pill">PIRAI INFOTECH</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="secondary-title">Grocery Retail Mobile App</h3>
+              <p class="secondary-desc">
+                Streamlined mobile commerce experience with instant cart management, localized category discovery, and frictionless checkout flows for daily essentials.
+              </p>
+              <div class="project-tags">
+                <span class="tag">E-Commerce</span>
+                <span class="tag">Mobile UI</span>
+                <span class="tag">User Flow</span>
+              </div>
+              <button class="btn btn-ghost btn-sm open-case-study" data-case="grocery-app">
+                <span>View Details</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </button>
+            </div>
+
+            <!-- PROJECT 4: MEDSOCIO -->
+            <div class="secondary-card glass-card" data-project="medsocio-app">
+              <div class="project-meta-row">
+                <span class="project-type-pill">EDXL INNOVATION</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="secondary-title">Medsocio Healthcare App</h3>
+              <p class="secondary-desc">
+                Designed a patient-doctor networking and healthcare management application focusing on accessibility, clear medical records hierarchy, and quick consultations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HealthTech</span>
+                <span class="tag">Accessibility</span>
+                <span class="tag">Prototyping</span>
+              </div>
+              <button class="btn btn-ghost btn-sm open-case-study" data-case="medsocio-app">
+                <span>View Details</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">03 // EXPERIENCE</span>
+          <h2 class="section-title">Industry Experience & Internships</h2>
+          <p class="section-subtitle">
+            Applying user-centric design principles to real-world products, client applications, and cross-functional design sprints.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- ROLE 1: PIRAI INFOTECH -->
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge-wrapper">
+              <div class="timeline-dot active"></div>
+              <span class="timeline-status">Present</span>
+            </div>
+            
+            <div class="timeline-body">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="role-title">UI/UX Designer — Intern</h3>
+                  <h4 class="company-name">Pirai Infotech</h4>
+                </div>
+                <span class="date-badge">Ongoing / Present</span>
+              </div>
+              
+              <ul class="timeline-achievements">
+                <li>
+                  <i data-lucide="check-circle" class="icon-xs"></i>
+                  <span><strong>Grocery Retail Mobile App:</strong> Led UI/UX screen design, category navigation, and end-to-end purchasing flows to improve checkout completion.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle" class="icon-xs"></i>
+                  <span><strong>Yuga Website & Brand Assets:</strong> Designed responsive web interface, promotional poster layouts, and digital branding assets.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle" class="icon-xs"></i>
+                  <span>Collaborated closely with developers and product managers to ensure pixel-perfect fidelity from Figma designs to production code.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-tools">
+                <span class="tool-tag">Figma</span>
+                <span class="tool-tag">Design Systems</span>
+                <span class="tool-tag">Wireframing</span>
+                <span class="tool-tag">Prototyping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROLE 2: EDXL -->
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge-wrapper">
+              <div class="timeline-dot"></div>
+              <span class="timeline-status">Completed</span>
+            </div>
+            
+            <div class="timeline-body">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="role-title">UI/UX Designer — Intern</h3>
+                  <h4 class="company-name">EdXL Learning & Innovation</h4>
+                </div>
+                <span class="date-badge">April 2024 – May 2024</span>
+              </div>
+              
+              <ul class="timeline-achievements">
+                <li>
+                  <i data-lucide="check-circle" class="icon-xs"></i>
+                  <span><strong>Medsocio Application:</strong> Crafted mobile application wireframes, high-fidelity UI screens, and interactive user flows for healthcare professionals and users.</span>
+                </li>
+                <li>
+                  <i data-lucide="check-circle" class="icon-xs"></i>
+                  <span>Conducted usability assessments and structured information architecture to simplify complex medical data navigation.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-tools">
+                <span class="tool-tag">Mobile App Design</span>
+                <span class="tool-tag">User Flow</span>
+                <span class="tool-tag">Adobe XD</span>
+                <span class="tool-tag">Figma</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLS BENTO GRID -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header between">
+          <div>
+            <span class="section-badge">04 // CAPABILITIES & ARSENAL</span>
+            <h2 class="section-title">Skills, Tools & Methodology</h2>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="tab-btn active" data-filter="all" role="tab">All</button>
+            <button class="tab-btn" data-filter="design" role="tab">Design & UX</button>
+            <button class="tab-btn" data-filter="tools" role="tab">Software Tools</button>
+            <button class="tab-btn" data-filter="strategy" role="tab">Methodology</button>
+          </div>
+        </div>
+
+        <div class="bento-grid">
+
+          <!-- TOOL STACK CARD -->
+          <div class="bento-card bento-tools glass-card" data-category="tools">
+            <div class="card-glow"></div>
+            <div class="bento-header">
+              <i data-lucide="layers" class="icon-card"></i>
+              <h3>Design Software & Tools</h3>
+            </div>
+            <p class="bento-desc">Industry-standard design, prototyping, and collaboration software used in daily workflow.</p>
+            
+            <div class="tools-grid">
+              <div class="tool-pill" data-tool="Figma">
+                <span class="tool-dot figma"></span>
+                <strong>Figma</strong>
+                <span class="tool-level">Advanced</span>
+              </div>
+              <div class="tool-pill" data-tool="ProtoPie">
+                <span class="tool-dot protopie"></span>
+                <strong>ProtoPie</strong>
+                <span class="tool-level">Interactive</span>
+              </div>
+              <div class="tool-pill" data-tool="Adobe XD">
+                <span class="tool-dot xd"></span>
+                <strong>Adobe XD</strong>
+                <span class="tool-level">Proficient</span>
+              </div>
+              <div class="tool-pill" data-tool="Photoshop">
+                <span class="tool-dot ps"></span>
+                <strong>Photoshop</strong>
+                <span class="tool-level">Editing</span>
+              </div>
+              <div class="tool-pill" data-tool="Illustrator">
+                <span class="tool-dot ai"></span>
+                <strong>Illustrator</strong>
+                <span class="tool-level">Vector</span>
+              </div>
+              <div class="tool-pill" data-tool="Sketch">
+                <span class="tool-dot sketch"></span>
+                <strong>Sketch</strong>
+                <span class="tool-level">UI</span>
+              </div>
+              <div class="tool-pill" data-tool="Balsamiq">
+                <span class="tool-dot balsamiq"></span>
+                <strong>Balsamiq</strong>
+                <span class="tool-level">Low-Fi</span>
+              </div>
+              <div class="tool-pill" data-tool="Miro">
+                <span class="tool-dot miro"></span>
+                <strong>Miro</strong>
+                <span class="tool-level">Mapping</span>
+              </div>
+              <div class="tool-pill" data-tool="Canva">
+                <span class="tool-dot canva"></span>
+                <strong>Canva</strong>
+                <span class="tool-level">Visuals</span>
+              </div>
+              <div class="tool-pill" data-tool="HTML/CSS">
+                <span class="tool-dot code"></span>
+                <strong>HTML / CSS</strong>
+                <span class="tool-level">Dev Bridge</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CORE COMPETENCIES CARD -->
+          <div class="bento-card bento-skills glass-card" data-category="design">
+            <div class="card-glow"></div>
+            <div class="bento-header">
+              <i data-lucide="cpu" class="icon-card"></i>
+              <h3>UI/UX Competencies</h3>
+            </div>
+            <p class="bento-desc">Comprehensive capabilities across the entire end-to-end design lifecycle.</p>
+            
+            <div class="skills-tag-cloud">
+              <span class="skill-badge" data-category="strategy">Problem Solving</span>
+              <span class="skill-badge" data-category="strategy">Strategic Thinking</span>
+              <span class="skill-badge" data-category="design">User-Centered Design</span>
+              <span class="skill-badge" data-category="design">User Research</span>
+              <span class="skill-badge" data-category="design">Interaction Design</span>
+              <span class="skill-badge" data-category="design">Responsive Design</span>
+              <span class="skill-badge" data-category="design">Mobile App Design</span>
+              <span class="skill-badge" data-category="design">Web Design</span>
+              <span class="skill-badge" data-category="strategy">Information Architecture</span>
+              <span class="skill-badge" data-category="design">Wireframing</span>
+              <span class="skill-badge" data-category="design">Rapid Prototyping</span>
+              <span class="skill-badge" data-category="strategy">Usability Testing</span>
+              <span class="skill-badge" data-category="strategy">User Flow Mapping</span>
+              <span class="skill-badge" data-category="strategy">Teamwork & Collaboration</span>
+              <span class="skill-badge" data-category="design">Graphic Design</span>
+            </div>
+          </div>
+
+          <!-- LANGUAGES CARD -->
+          <div class="bento-card bento-lang glass-card" data-category="strategy">
+            <div class="card-glow"></div>
+            <div class="bento-header">
+              <i data-lucide="languages" class="icon-card"></i>
+              <h3>Languages & Communication</h3>
+            </div>
+            <div class="lang-list">
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <span class="lang-proficiency fluent">Fluent</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Tamil</span>
+                <span class="lang-proficiency native">Native</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">Sourastra</span>
+                <span class="lang-proficiency native">Native</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & BACKGROUND SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">05 // EDUCATION & CREDENTIALS</span>
+          <h2 class="section-title">Academic & Design Foundation</h2>
+        </div>
+
+        <div class="education-grid">
+
+          <!-- ADVANCED UI/UX DESIGN -->
+          <div class="education-card glass-card highlight-border">
+            <div class="card-glow"></div>
+            <div class="edu-badge">CERTIFICATION COURSE</div>
+            <h3 class="edu-degree">Advanced UIUX Designing</h3>
+            <h4 class="edu-school">Web D School of Design, Chennai</h4>
+            <div class="edu-date"><i data-lucide="calendar"></i> July 2023 – December 2023</div>
+            <p class="edu-desc">
+              Comprehensive practical training in User Research, Information Architecture, Wireframing, Figma Masterclasses, Micro-interactions, and Design System tokens.
+            </p>
+          </div>
+
+          <!-- BE MECHANICAL -->
+          <div class="education-card glass-card">
+            <div class="card-glow"></div>
+            <div class="edu-badge">BACHELOR'S DEGREE</div>
+            <h3 class="edu-degree">Bachelor of Engineering (BE) in Mechanical</h3>
+            <h4 class="edu-school">SSM Institute of Engineering and Technology, Dindigul</h4>
+            <div class="edu-date"><i data-lucide="calendar"></i> August 2019 – June 2023</div>
+            <p class="edu-desc">
+              Graduated with strong foundations in systematic analytical problem solving, ergonomics, engineering design thinking, and structural logic.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & GET IN TOUCH -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container">
+        
+        <div class="contact-cta glass-card">
+          <div class="card-glow"></div>
+          <span class="section-badge">06 // GET IN TOUCH</span>
+          <h2 class="contact-title">Let's craft the next great user experience together.</h2>
+          <p class="contact-subtitle">
+            Whether you have a full-time UI/UX role, a freelance design project, or just want to chat about design systems — my inbox is always open.
+          </p>
+
+          <div class="contact-buttons">
+            <a href="mailto:saswath1308@gmail.com" class="btn btn-primary btn-lg">
+              <i data-lucide="send" class="icon-sm"></i>
+              <span>Send Message</span>
+            </a>
+            
+            <button class="btn btn-secondary btn-lg copy-btn" data-email="saswath1308@gmail.com">
+              <i data-lucide="copy" class="icon-sm"></i>
+              <span>Copy Email</span>
+            </button>
+
+            <a href="tel:+918122343302" class="btn btn-outline btn-lg">
+              <i data-lucide="phone-call" class="icon-sm"></i>
+              <span>+91 8122343302</span>
+            </a>
+          </div>
+
+          <div class="social-links-row">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="social-btn">
+              <i data-lucide="linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://behance.net" target="_blank" rel="noreferrer" class="social-btn">
+              <i data-lucide="globe"></i>
+              <span>Behance</span>
+            </a>
+            <a href="mailto:saswath1308@gmail.com" class="social-btn">
+              <i data-lucide="mail"></i>
+              <span>Email</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Aswath S. All Rights Reserved.</p>
+      <p class="footer-tagline">Designed with precision & empathy.</p>
+      <a href="#hero" class="back-to-top">
+        <span>Back to Top</span>
+        <i data-lucide="arrow-up" class="icon-xs"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- FLOATING BOTTOM DOCK (TRAN KHA STYLE) -->
+  <nav class="floating-dock" aria-label="Quick Navigation Dock">
+    <a href="#hero" class="dock-item active" title="Home">
+      <i data-lucide="home"></i>
+      <span class="dock-tooltip">Home</span>
+    </a>
+    <a href="#about" class="dock-item" title="About">
+      <i data-lucide="user"></i>
+      <span class="dock-tooltip">About</span>
+    </a>
+    <a href="#projects" class="dock-item" title="Selected Work">
+      <i data-lucide="sparkles"></i>
+      <span class="dock-tooltip">Work</span>
+    </a>
+    <a href="#experience" class="dock-item" title="Experience">
+      <i data-lucide="briefcase"></i>
+      <span class="dock-tooltip">Experience</span>
+    </a>
+    <a href="#skills" class="dock-item" title="Skills">
+      <i data-lucide="cpu"></i>
+      <span class="dock-tooltip">Skills</span>
+    </a>
+    <div class="dock-divider"></div>
+    <button id="dock-resume-btn" class="dock-item" title="View Resume">
+      <i data-lucide="file-text"></i>
+      <span class="dock-tooltip">Resume</span>
+    </button>
+    <a href="mailto:saswath1308@gmail.com" class="dock-item dock-highlight" title="Contact">
+      <i data-lucide="send"></i>
+      <span class="dock-tooltip">Contact</span>
+    </a>
+  </nav>
+
+  <!-- RESUME MODAL DIALOG -->
+  <dialog id="resume-modal" class="modal-dialog">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span class="modal-tag">CURRICULUM VITAE</span>
+          <h2 class="modal-title">Aswath S — UI/UX Designer</h2>
+        </div>
+        <div class="modal-actions">
+          <button id="print-resume-btn" class="btn btn-outline btn-sm">
+            <i data-lucide="printer" class="icon-xs"></i>
+            <span>Print / PDF</span>
+          </button>
+          <button id="close-resume-modal" class="btn-close" aria-label="Close modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-printable" id="printable-resume">
+        
+        <!-- RESUME HEADER -->
+        <div class="resume-top">
+          <div>
+            <h1 class="resume-name">ASWATH.S</h1>
+            <h2 class="resume-role">UI UX Designer</h2>
+          </div>
+          <div class="resume-contact-block">
+            <div><i data-lucide="mail"></i> saswath1308@gmail.com</div>
+            <div><i data-lucide="map-pin"></i> Palani, Tamil Nadu</div>
+            <div><i data-lucide="phone"></i> +91 8122343302</div>
+          </div>
+        </div>
+
+        <div class="resume-divider"></div>
+
+        <div class="resume-two-col">
+          
+          <!-- LEFT COLUMN -->
+          <div class="resume-col-main">
+            
+            <section class="resume-section">
+              <h3 class="resume-section-title">ABOUT</h3>
+              <p>
+                Passionate and innovative UI/UX designer with expertise in user-centered design principles. 
+                Skilled in understanding user needs and behaviors to craft intuitive, engaging digital experiences. 
+                Driven by empathy and creativity, I excel at solving complex problems with thoughtful, user-centric solutions. 
+                Known for attention to detail and a commitment to delivering high-quality designs that exceed expectations.
+              </p>
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">EXPERIENCE</h3>
+              
+              <div class="resume-item">
+                <div class="item-header">
+                  <strong>Pirai Infotech</strong>
+                  <span class="item-date">Present</span>
+                </div>
+                <div class="item-subtitle">UI/UX Designer – Intern</div>
+                <p>Projects — Grocery retail mobile application, Yuga website design and poster design.</p>
+              </div>
+
+              <div class="resume-item">
+                <div class="item-header">
+                  <strong>EdXL learning & Innovation</strong>
+                  <span class="item-date">April – May 2024</span>
+                </div>
+                <div class="item-subtitle">UI/UX Designer – Intern</div>
+                <p>Projects — Mobile Application design for Medsocio application.</p>
+              </div>
+
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">PROJECT</h3>
+              
+              <div class="resume-item">
+                <div class="item-subtitle">UI/UX Case Project</div>
+                <div class="item-project-name">Seaways - Mobile Application Design</div>
+                <p>Designed a mobile app prototype for cruise trip booking and rentals, leveraging user-centered design principles to enhance usability and engagement.</p>
+              </div>
+
+              <div class="resume-item">
+                <div class="item-project-name">Landing Page</div>
+                <p>Developed a high-performing landing page for cruise booking and rentals, delivering a seamless and intuitive user experience. Optimized design for usability, visual appeal, and conversion rates, ensuring alignment with user needs and business objectives.</p>
+              </div>
+
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">EDUCATION</h3>
+              
+              <div class="resume-item">
+                <div class="item-badge-light">CERTIFICATION COURSE</div>
+                <strong>Advanced UIUX Designing</strong>
+                <div class="item-school">Web D School of Design, Chennai</div>
+                <div class="item-date">July – December 2023</div>
+              </div>
+
+              <div class="resume-item">
+                <div class="item-badge-light">BACHELOR'S DEGREE</div>
+                <strong>BE in Mechanical</strong>
+                <div class="item-school">SSM Institute of Engineering and Technology, Dindigul</div>
+                <div class="item-date">August 2019 – June 2023</div>
+              </div>
+
+            </section>
+
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="resume-col-side">
+            
+            <section class="resume-section">
+              <h3 class="resume-section-title">SKILLS</h3>
+              <ul class="resume-bullet-list">
+                <li>Problem solving</li>
+                <li>Teamwork</li>
+                <li>Strategical Thinking</li>
+                <li>Design principles</li>
+                <li>User centered design</li>
+                <li>User Research</li>
+                <li>Graphic Design</li>
+                <li>Interaction Design</li>
+                <li>Responsive Design</li>
+                <li>Mobile Design</li>
+                <li>Web Design</li>
+                <li>Information Architecture</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Usability Testing</li>
+                <li>User Flow</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">TOOLS</h3>
+              <div class="resume-tools-pills">
+                <span>Figma</span>
+                <span>Adobe XD</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>Sketch</span>
+                <span>ProtoPie</span>
+                <span>Balsamiq</span>
+                <span>Miro</span>
+                <span>Canva</span>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">LANGUAGE</h3>
+              <ul class="resume-bullet-list">
+                <li>English <span class="muted">(Fluent)</span></li>
+                <li>Tamil <span class="muted">(Native)</span></li>
+                <li>Sourastra <span class="muted">(Native)</span></li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h3 class="resume-section-title">LINKS</h3>
+              <div class="resume-links-list">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://behance.net" target="_blank">Behance Profile</a>
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CASE STUDY DETAIL MODAL -->
+  <dialog id="case-study-modal" class="modal-dialog">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span id="cs-modal-tag" class="modal-tag">CASE STUDY</span>
+          <h2 id="cs-modal-title" class="modal-title">Project Title</h2>
+        </div>
+        <button id="close-case-study-modal" class="btn-close" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="cs-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <i data-lucide="check" class="toast-icon"></i>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
