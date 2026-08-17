@@ -157,29 +157,65 @@ img, svg {
   -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 60%, transparent 100%);
 }
 
-/* Custom Cursor (Desktop) */
+/* Custom Photo Cursor (Desktop) */
 @media (pointer: fine) {
-  .cursor-dot {
+  .cursor-follower {
     position: fixed;
     top: 0;
     left: 0;
-    width: 6px;
-    height: 6px;
-    background-color: var(--text-primary);
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     pointer-events: none;
     z-index: 99999;
     transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    border: 2px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 85, 255, 0.6), 0 0 50px rgba(56, 189, 248, 0.35);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #090a0b;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.2s ease,
+                box-shadow 0.25s ease;
+    will-change: left, top;
+  }
+
+  .cursor-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.25s ease;
+  }
+
+  .cursor-follower.hovering {
+    width: 64px;
+    height: 64px;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.8), 0 0 60px rgba(0, 85, 255, 0.5);
+  }
+
+  .cursor-follower.hovering .cursor-avatar-img {
+    transform: scale(1.08);
+  }
+
+  .cursor-follower.clicking {
+    transform: translate(-50%, -50%) scale(0.85);
+    border-color: #ffffff;
   }
 
   .cursor-glow {
     position: fixed;
     top: 0;
     left: 0;
-    width: 320px;
-    height: 320px;
-    background: radial-gradient(circle, rgba(0, 85, 255, 0.08) 0%, transparent 70%);
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(0, 85, 255, 0.12) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 99998;
@@ -600,8 +636,8 @@ img, svg {
 }
 
 .user-avatar-badge {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   background: var(--gradient-blue);
   color: #fff;
   font-family: var(--font-display);
@@ -612,6 +648,17 @@ img, svg {
   justify-content: center;
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-glow);
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 50%;
 }
 
 .user-name {
